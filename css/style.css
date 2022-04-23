@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Vidaloka&display=swap');
+
+header,
+body,
+nav,
+a,
+main,
+h1,
+p,
+span {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family          : 'Vidaloka', serif;
+    background-attachment: fixed;
+    background-color     : var(--black);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black : #000000;
+    --white : #f8f8f8;
+    --yellow: #ffd100;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background         : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../img/background.jpg");
+    background-position: center;
+    background-size    : cover;
+    flex-direction     : column;
+}
+
+header {
+    flex-direction : row;
+    align-items    : center;
+    justify-content: space-around;
+    padding        : 2% 0 0 0;
+}
+
+header h1 {
+    font-size     : 1.4em;
+    color         : var(--white);
+    text-transform: uppercase;
+}
+
+header span {
+    color: var(--yellow);
+}
+
+header .menu-item {
+    cursor: pointer;
+}
+
+header nav {
+    width     : 40%;
+    text-align: center;
+}
+
+header nav a {
+    color       : var(--white);
+    margin-right: 10%;
+}
+
+header nav a:hover {
+    color: var(--yellow);
+}
+
+header .menu-item .menu {
+    width           : 35px;
+    height          : 5px;
+    background-color: var(--white);
+    margin          : 6px 0;
+}
+
+main {
+    height: 100vh;
+}
+
+main .container-principal {
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+main .texto-principal-1 {
+    margin-top: 10%;
+}
+
+main .texto-principal-1 .p1 {
+    color         : var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom : 1%;
+    font-family   : 'Raleway', sans-serif;
+}
+
+main .texto-principal-1 .p2 {
+    font-size     : 3em;
+    color         : var(--white);
+    letter-spacing: 0.1em;
+}
+
+main .texto-principal-1 .margem-texto {
+    margin-bottom: 2%;
+}
+
+main .texto-principal-1 .p1 a {
+    color: var(--yellow);
+}
